@@ -6,7 +6,6 @@ from label_studio_ml.utils import get_image_local_path, get_single_tag_keys
 from ultralytics import YOLO
 import cv2
 LABEL_STUDIO_HOST = os.getenv('LABEL_STUDIO_HOST', 'http://localhost:8080')
-# LABEL_STUDIO_API_KEY = os.getenv('LABEL_STUDIO_API_KEY', '4f81bd86324882866758670e58c39e514adc2963')
 LABEL_STUDIO_ACCESS_TOKEN = os.environ.get("LABEL_STUDIO_ACCESS_TOKEN", '4f81bd86324882866758670e58c39e514adc2963')
 
 def get_id() -> str:
